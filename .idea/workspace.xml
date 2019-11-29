@@ -186,25 +186,7 @@
       <change afterPath="$PROJECT_DIR$/../login/.idea/login.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../node_modules/safe-json-stringify/.idea/safe-json-stringify.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../numpy_study/.idea/numpy_study.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/OrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/dataobject/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/dataobject/OrderMaster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/dto/OrderDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/enums/OrderStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/enums/PayStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/repository/OrderDetailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/repository/OrderMasterRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/utils/CookieUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/utils/serializer/Date2LongSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/imooc/order/OrderApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/imooc/order/repository/OrderDetailRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/imooc/order/repository/OrderMasterRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/utils/KeyUtil.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../product/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../product/src/main/java/com/imooc/product/controller/ProductController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../product/src/main/java/com/imooc/product/dataobject/ProductInfo.java" afterDir="false" />
@@ -216,6 +198,8 @@
       <change afterPath="$PROJECT_DIR$/../test2/.idea/test2.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../test2/test3.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../zanhu/.idea/zanhu.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/order/service/impl/OrderServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -387,7 +371,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575013486460</updated>
-      <workItem from="1575013492587" duration="5484000" />
+      <workItem from="1575013492587" duration="6013000" />
     </task>
     <servers />
   </component>
