@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-11-30T15:49:30.312+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "No primary or default constructor found for interface java.util.List",
+  "path": "/product/listForOrder"
+}
