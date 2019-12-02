@@ -1,4 +1,4 @@
-package com.imooc.order.utils;
+package com.immoc.server.utils;
 
 import java.util.Random;
 

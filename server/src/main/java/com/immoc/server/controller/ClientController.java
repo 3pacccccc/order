@@ -1,8 +1,8 @@
-package com.imooc.order.controller;
+package com.immoc.server.controller;
 
-import com.imooc.order.client.ProductClient;
-import com.imooc.order.dataobject.ProductInfo;
-import com.imooc.order.dto.CartDTO;
+import com.immoc.server.client.ProductClient;
+import com.immoc.server.dto.CartDTO;
+import com.immoc.server.dataobject.ProductInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;

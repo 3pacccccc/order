@@ -12,6 +12,12 @@
     <artifactId>order</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>order</name>
+    <packaging>pom</packaging>
+    <modules>
+        <module>client</module>
+        <module>common</module>
+        <module>server</module>
+    </modules>
     <description>Demo project for Spring Boot</description>
 
     <properties>

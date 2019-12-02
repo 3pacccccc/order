@@ -1,8 +1,8 @@
-package com.imooc.order.client;
+package com.immoc.server.client;
 
 
-import com.imooc.order.dataobject.ProductInfo;
-import com.imooc.order.dto.CartDTO;
+import com.immoc.server.dataobject.ProductInfo;
+import com.immoc.server.dto.CartDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

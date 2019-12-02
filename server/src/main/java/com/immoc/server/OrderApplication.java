@@ -1,4 +1,4 @@
-package com.imooc.order;
+package com.immoc.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableJpaAuditing
-@EnableFeignClients
+@EnableFeignClients(basePackageClasses = "com.immoc.product.client")
 public class OrderApplication {
 
     public static void main(String[] args) {

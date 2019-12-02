@@ -1,4 +1,4 @@
-package com.imooc.order.config;
+package com.immoc.server.config;
 
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;

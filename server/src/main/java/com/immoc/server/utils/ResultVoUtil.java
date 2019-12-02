@@ -1,6 +1,6 @@
-package com.imooc.order.utils;
+package com.immoc.server.utils;
 
-import com.imooc.order.vo.ResultVo;
+import com.immoc.server.vo.ResultVo;
 
 public class ResultVoUtil {
 

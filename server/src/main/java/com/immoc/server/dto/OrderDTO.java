@@ -1,9 +1,9 @@
-package com.imooc.order.dto;
+package com.immoc.server.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.imooc.order.dataobject.OrderDetail;
-import com.imooc.order.utils.serializer.Date2LongSerializer;
+import com.immoc.server.dataobject.OrderDetail;
+import com.immoc.server.utils.serializer.Date2LongSerializer;
 import lombok.Data;
 
 import java.math.BigDecimal;

@@ -1,15 +1,13 @@
-package com.imooc.order.converter;
+package com.immoc.server.converter;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.imooc.order.dataobject.OrderDetail;
-import com.imooc.order.dto.OrderDTO;
-import com.imooc.order.enums.ResultEnum;
-import com.imooc.order.exception.SellException;
-import com.imooc.order.form.OrderForm;
-import com.imooc.order.utils.ResultVoUtil;
+import com.immoc.server.enums.ResultEnum;
+import com.immoc.server.dataobject.OrderDetail;
+import com.immoc.server.dto.OrderDTO;
+import com.immoc.server.exception.SellException;
+import com.immoc.server.form.OrderForm;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.BeanUtils;
 
 import java.util.ArrayList;
 import java.util.List;

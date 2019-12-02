@@ -1,6 +1,6 @@
-package com.imooc.order.service;
+package com.immoc.server.service;
 
-import com.imooc.order.dto.OrderDTO;
+import com.immoc.server.dto.OrderDTO;
 
 public interface OrderService {
     OrderDTO create(OrderDTO orderDTO);

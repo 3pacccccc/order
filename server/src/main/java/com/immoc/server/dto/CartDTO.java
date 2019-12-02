@@ -1,4 +1,4 @@
-package com.imooc.order.dto;
+package com.immoc.server.dto;
 
 import lombok.Data;
 

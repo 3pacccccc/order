@@ -1,6 +1,6 @@
-package com.imooc.order.exception;
+package com.immoc.server.exception;
 
-import com.imooc.order.enums.ResultEnum;
+import com.immoc.server.enums.ResultEnum;
 
 public class SellException  extends RuntimeException{
 

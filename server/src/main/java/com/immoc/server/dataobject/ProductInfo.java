@@ -1,4 +1,4 @@
-package com.imooc.order.dataobject;
+package com.immoc.server.dataobject;
 
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
