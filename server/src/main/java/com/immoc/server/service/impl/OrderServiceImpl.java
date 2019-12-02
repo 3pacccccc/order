@@ -1,6 +1,8 @@
 package com.immoc.server.service.impl;
 
-import com.immoc.server.client.ProductClient;
+import com.immoc.client.ProductClient;
+import com.immoc.common.DecreaseStockInput;
+import com.immoc.common.ProductInfoOutput;
 import com.immoc.server.dto.CartDTO;
 import com.immoc.server.enums.OrderStatusEnum;
 import com.immoc.server.enums.PayStatusEnum;
@@ -40,12 +42,12 @@ public class OrderServiceImpl implements OrderService {
 
         // 查询商品信息(调用商品product服务)
         List<String> productIdList = orderDTO.getOrderDetailList().stream().map(OrderDetail::getProductId).collect(Collectors.toList());//获取商品id列表
-        List<ProductInfo> productInfoList = productClient.listForOrder(productIdList);
+        List<ProductInfoOutput> productInfoList = productClient.listForOrder(productIdList);
 
         // 计算总价
         BigDecimal orderAmont = new BigDecimal(BigInteger.ZERO);  // 先将总价计为0，再累加
         for (OrderDetail orderDetail : orderDTO.getOrderDetailList()) {
-            for (ProductInfo productInfo : productInfoList) {
+            for (ProductInfoOutput productInfo : productInfoList) {
                 if (productInfo.getProductId().equals(orderDetail.getProductId())) {
                     // 单价*数量
                     orderAmont = productInfo.getProductPrice().multiply(new BigDecimal(orderDetail.getProductQuantity()))
@@ -60,7 +62,7 @@ public class OrderServiceImpl implements OrderService {
         }
 
         // 扣库存
-        List<CartDTO> cartDTOList = orderDTO.getOrderDetailList().stream().map(e -> new CartDTO(e.getProductId(), e.getProductQuantity())).collect(Collectors.toList());
+        List<DecreaseStockInput> cartDTOList = orderDTO.getOrderDetailList().stream().map(e -> new DecreaseStockInput(e.getProductId(), e.getProductQuantity())).collect(Collectors.toList());
         productClient.decreaseStock(cartDTOList);
 
         //订单入库

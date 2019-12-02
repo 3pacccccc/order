@@ -1,6 +1,7 @@
 package com.immoc.server.controller;
 
-import com.immoc.server.client.ProductClient;
+import com.immoc.client.ProductClient;
+import com.immoc.common.ProductInfoOutput;
 import com.immoc.server.dto.CartDTO;
 import com.immoc.server.dataobject.ProductInfo;
 import lombok.extern.slf4j.Slf4j;
@@ -46,21 +47,21 @@ public class ClientController {
 
         // 方法4 使用feign 步骤：1.在pom文件中引入feign的依赖 2.在启动文件OrderApplication里面添加EnableFeignClients的注解
         // 3.在client包下面创建一个接口，声明要引用哪个服务下的哪个路由  4. 在Autowired中引入进来
-        String response = productClient.productMsg();
-        log.info("response={}", response);
-        return response;
+//        String response = productClient.productMsg();
+//        log.info("response={}", response);
+        return null;
     }
 
     @GetMapping("/getProductList")
     public String getProductList() {
-        List<ProductInfo> productInfoList = productClient.listForOrder(Arrays.asList("789jhiortlmtqqq", "dsfq865321"));
+        List<ProductInfoOutput> productInfoList = productClient.listForOrder(Arrays.asList("789jhiortlmtqqq", "dsfq865321"));
         log.info("response={}", productInfoList);
         return "ok";
     }
 
-    @GetMapping("/productDecreaseStock")
-    public String productDecreaseStock(){
-        productClient.decreaseStock(Arrays.asList(new CartDTO("789jhiortlmtqqq", 8)));
-        return "success";
-    }
+//    @GetMapping("/productDecreaseStock")
+//    public String productDecreaseStock(){
+//        productClient.decreaseStock(Arrays.asList(new CartDTO("789jhiortlmtqqq", 8)));
+//        return "success";
+//    }
 }

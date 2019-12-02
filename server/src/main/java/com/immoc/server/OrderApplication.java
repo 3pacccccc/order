@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableJpaAuditing
-@EnableFeignClients(basePackageClasses = "com.immoc.product.client")
+@EnableFeignClients(basePackages = "com.immoc.client")
 public class OrderApplication {
 
     public static void main(String[] args) {
